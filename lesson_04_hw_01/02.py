@@ -1,11 +1,11 @@
-import math
+def triangle_square_and_perimeter(a, b):  # returns 2 values
+    global s, p
+    s = a * b * 0.5
+    p = (a**2 + b**2)**0.5 + a + b
 
 
-def degrees2radians(degrees):  # returns float: radians value
-    radians = 3.14/180 * degrees
-    return radians
-
-
-print(round(math.cos(degrees2radians(60)), 2))
-print(round(math.cos(degrees2radians(45)), 2))
-print(round(math.cos(degrees2radians(40)), 2))
+s, p = 0, 0
+a = int(input('Enter the length of the first leg: '))
+b = int(input('Enter the length of the second leg: '))
+triangle_square_and_perimeter(a, b)
+print('square =', s, '\nperimeter =', p)
