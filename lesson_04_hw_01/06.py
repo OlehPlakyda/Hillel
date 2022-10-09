@@ -8,6 +8,5 @@ def my_sum(num, start=0):
 
 
 num = input('Enter a number: ')
-num = [*num]
 start = int(input('Enter a number start: '))
 my_sum(num, start)
