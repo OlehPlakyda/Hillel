@@ -13,7 +13,7 @@ def printtask(list):
     for z in range(n-1, -1, -1):
         print(list[z], end=' ')
     print()
-    for z in range(n - 1, -1, -2):
+    for z in range(n-1, -1, -2):
         print(list[z], end=' ')
     print('\nLength of the string =', n)
 
