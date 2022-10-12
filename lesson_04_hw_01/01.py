@@ -2,7 +2,7 @@ import math
 
 
 def degrees2radians(degrees):  # returns float: radians value
-    radians = 3.14/180 * degrees
+    radians = math.pi/180 * degrees
     return radians
 
 
