@@ -4,7 +4,8 @@ def my_sum(num):
 
 
 num = input('Enter a three-digit number: ')
-if len(num) > 3:
-    print('Error: Your number has more than three digits')
+length = len(num)
+if length > 3 or length < 3:
+    print('Error: Your number is incorrect')
 else:
-    my_sum(num)
+    print(my_sum(num))

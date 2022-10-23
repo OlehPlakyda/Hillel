@@ -1,12 +1,6 @@
-def my_sum(num, start=0):
-    sum = 0
-    n = len(num)
-    for i in range(n):
-        sum += int(num[i-1])
-    sum += start
-    print('Your sum is:', sum)
+def my_sum(*num, start=0):
+    my_sum = sum(num) + start
+    return my_sum
 
 
-num = input('Enter a number: ')
-start = int(input('Enter a number start: '))
-my_sum(num, start)
+print('Your sum is:', my_sum(1, 2, 3, 4, 5, 6, start=60))
