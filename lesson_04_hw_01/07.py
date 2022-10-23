@@ -8,4 +8,4 @@ length = len(num)
 if length > 3 or length < 3:
     print('Error: Your number is incorrect')
 else:
-    print(my_sum(num))
+    print('Your sum is', my_sum(num))
