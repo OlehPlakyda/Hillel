@@ -1,5 +1,5 @@
 def my_sum(*num, start=0):
-    my_sum = sum(num) + start
+    my_sum = sum(num, start)
     return my_sum
 
 
