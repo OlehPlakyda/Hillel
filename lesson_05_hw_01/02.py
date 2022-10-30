@@ -4,21 +4,28 @@ from math import sqrt
 def solve_quadratic_equation(a, b, c):
     d = b*b - 4*a*c
     if d < 0:
-        print('There are no solutions')
+        x1 = None
+        x2 = None
+        return (x1, x2)
     elif d == 0:
-        x = -b/2
-        print(f'x = {x}')
+        x1 = -b/2
+        x2 = None
+        return (x1, x2)
     else:
         x1 = (-b + sqrt(d)) / (2*a)
         x2 = (-b - sqrt(d)) / (2*a)
-        print(f'x1 = {x1:.2f}, x2 = {x2:.2f}')
+        return (x1, x2)
 
 
 def main():
-    a = int(input('Enter a: '))
-    b = int(input('Enter b: '))
-    c = int(input('Enter c: '))
-    solve_quadratic_equation(a, b, c)
+    a, b, c = map(int, input('Enter a b c with spaces: ').split())
+    result = solve_quadratic_equation(a, b, c)
+    if result[0] is None and result[1] is None:
+        print('There are no solutions')
+    elif result[1] is None:
+        print(f'x = {result[0]:.2f}')
+    else:
+        print(f'x1 = {result[0]:.2f}, x2 = {result[1]:.2f}')
 
 
 main()
