@@ -6,15 +6,15 @@ def solve_quadratic_equation(a, b, c):
     if d < 0:
         x1 = None
         x2 = None
-        return (x1, x2)
+        return x1, x2
     elif d == 0:
         x1 = -b/2
         x2 = None
-        return (x1, x2)
+        return x1, x2
     else:
         x1 = (-b + sqrt(d)) / (2*a)
         x2 = (-b - sqrt(d)) / (2*a)
-        return (x1, x2)
+        return x1, x2
 
 
 def main():
