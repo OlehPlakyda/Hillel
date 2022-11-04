@@ -6,10 +6,13 @@ def random_12digit_number():
 
 
 def get_max_digit(number):  # returns int
-    number = str(number)
-    for i in range(9, 0, -1):
-        if f'{i}' in number:
-            return i
+    x = 0
+    for i in range(12):
+        a = number % 10
+        if a > x:
+            x = a
+        number //= 10
+    return x
 
 
 def main():
