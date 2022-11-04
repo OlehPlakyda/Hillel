@@ -11,7 +11,7 @@ def diff_min_max(num_limit, lower_bound, upper_bound):  # returns int
 def main():
     num_limit = int(input('Enter amount of numbers: '))
     lower_bound, upper_bound = map(int, input('Enter lower_bound and upper_bound with spaces: ').split())
-    print('Difference between min and max number:', diff_min_max(num_limit, lower_bound, upper_bound))
+    print('Difference between min and max number = ', diff_min_max(num_limit, lower_bound, upper_bound))
 
 
 main()
