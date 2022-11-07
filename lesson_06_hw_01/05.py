@@ -2,7 +2,7 @@ def calculate_wheat_chess_position(kilograms):
     n = 0
     for n in range(65):
         weight = 1 * 2**(n-1) * 0.000035
-        if weight == kilograms:
+        if weight >= kilograms:
             break
     for i in 'abcdefgh':
         if n <= 8:
